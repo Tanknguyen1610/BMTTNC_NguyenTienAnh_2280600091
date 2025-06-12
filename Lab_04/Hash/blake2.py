@@ -1,7 +1,7 @@
 import hashlib
 
 def blake2(message):
-    blake2_hash = hashlib.blake2s(digest_size=32)
+    blake2_hash = hashlib.blake2s(digest_size=32) 
     blake2_hash.update(message)
     return blake2_hash.digest()
 
